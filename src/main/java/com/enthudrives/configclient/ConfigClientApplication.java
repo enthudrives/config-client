@@ -15,13 +15,3 @@ public class ConfigClientApplication {
 
 }
 
-@Controller
-class ConfigController {
-	@Value("${address.city}")
-	private String city;
-
-	@GetMapping("/city")
-	public String getMyCity() {
-		return city;
-	}
-}
